@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" type="imagem/png" href="img/ico.ico" />
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/style.scss">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Tec BREMM</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand h1 mb-0" href="index.html"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/img-1.png">Início</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav navbar-brand mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="produtosDrop"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/img-2.png">Produtos</a>
+                    <div class="dropdown-menu bg-dark sub-menu-mob">
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-1.png">Head-Sets</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-2.png">MousePads</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-3.png">Teclados</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-4.png">Monitores</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-5.png">Mouses</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-6.png">Joysticks</a>
+                        <a class="dropdown-item text-light" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/sub-menu/img-7.png">Outros</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/img-3.png">Infra-Estrutura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img class="col-3 col-sm-2 col-lg-3" src="img/menu/img-4.png">Suporte</a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    </nav>
+    <div id="carouselSite" class="carousel slide size-carousel size-carousel-height" data-ride="carousel" class="active">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+            <li data-target="#carouselSite" data-slide-to="3"></li>
+            <li data-target="#carouselSite" data-slide-to="4"></li>
+        </ol>
+          <div class="carousel-inner size-carousel size-carousel-height">
+            <div class="carousel-item active">
+                <img src="img/carousel/img-1.jpg" class="img-fluid d-block size-carousel size-carousel-height">
+                <div class="carousel-caption">
+                    <div class="card-footer p-0 p-md-3" align="center">
+                        <a href="#" class="card-link">
+                            <button type="button" class="text-light btn btn-carousel col-md-3 col-8 p-1 p-md-2" data-toggle="modal" data-target="#headModal">Detalhes</button>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/img-2.jpg" class="img-fluid d-block size-carousel size-carousel-height">
+                  <div class="carousel-caption">
+                    <div class="card-footer p-0 p-md-3" align="center">
+                        <a href="#" class="card-link">
+                            <button type="button" class="text-light btn btn-carousel col-md-3 col-8 p-1 p-md-2" data-toggle="modal" data-target="#monitorModal">Detalhes</button>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/img-3.png" class="img-fluid d-block size-carousel size-carousel-height">
+                  <div class="carousel-caption">
+                    <div class="card-footer p-0 p-md-3" align="center">
+                        <a href="#" class="card-link">
+                            <button type="button" class="text-light btn btn-carousel col-md-3 col-8 p-1 p-md-2" data-toggle="modal" data-target="#tecladoModal">Detalhes</button>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/img-4.png" class="img-fluid d-block size-carousel size-carousel-height">
+                  <div class="carousel-caption">
+                    <div class="card-footer p-0 p-md-3" align="center">
+                        <a href="#" class="card-link">
+                            <button type="button" class="text-light btn btn-carousel col-md-3 col-8 p-1 p-md-2" data-toggle="modal" data-target="#mousepadModal">Detalhes</button>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/img-5.jpg" class="img-fluid d-block size-carousel size-carousel-height">
+                  <div class="carousel-caption">
+                    <div class="card-footer p-0 p-md-3" align="center">
+                        <a href="#" class="card-link">
+                            <button type="button" class="text-light btn btn-carousel col-md-3 col-8 p-1 p-md-2" data-toggle="modal" data-target="#mouseModal">Detalhes</button>
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Avançar</span>
+        </a>
+    </div>
+      <div class="container">
+           <div class="row mb-2 mt-5">
+                <div class="col-12 col-lg-6 text-center d-none d-lg-block">
+                  <h1>Sobre nós</h1>
+                      <p class="text-secondary">Fundada no ano de 2019, a TEC BREMM é uma empresa que trabalha com os mais variados produtos, atuando especificamente no setor de informática e equipamentos eletrônicos em geral, área bastante competitiva e em constante crescimento, onde qualidade, variedade, garantia e eficiência são critérios importantíssimos para total satisfação, confiança e preferência de nossos consumidores.
+                        Oferecemos não apenas a comodidade da compra online, mas também o tratamento olho no olho que muitos preferem e sempre confiam. Procuramos acima de tudo oferecer o que há de melhor, os melhores fornecedores, os mais atualizados produtos, o mais atencioso dos atendimentos, juntamente com os preços mais competitivos e atraentes do mercado para que nosso público encontre não apenas variedade e qualidade, mas também uma empresa que se preocupa com a felicidade e total satisfação de seus clientes e por que não, amigos!
+                        </p>
+                </div>
+                <img class="col-12 col-lg-6" src="img/box-principal.jpg">
+                   <div class="col-12 col-lg-6 text-center d-block d-lg-none">
+                      <h1 class="mt-3">Sobre nós</h1>
+                      <p class="text-secondary">Fundada no ano de 2019, a TEC BREMM é uma empresa que trabalha com os mais variados produtos, atuando especificamente no setor de informática e equipamentos eletrônicos em geral, área bastante competitiva e em constante crescimento, onde qualidade, variedade, garantia e eficiência são critérios importantíssimos para total satisfação, confiança e preferência de nossos consumidores.</p>
+                    </div>
+            </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-12 text-center my-2 my-md-5">
+                <h1 class="display-4 h1-mob">Destaques</h1>
+            </div>  
+        </div>
+           <div class="row mb-5">
+              <div class="col-12 col-lg-3">
+                <div class="card">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#mouseModal">
+                        <img class="card-img-top" src="img/cards/img-1.jpg">
+                    </a>
+                    <div class="card-body text-center"><p class="card-text text-secondary">Deslizes faceis e sem desconforto ao jogar</p></div>
+                </div>  
+                </div>
+               <div class="col-12 col-lg-3 mt-lg-0 mt-4">
+                <div class="card">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#tecladoModal">
+                        <img class="card-img-top" src="img/cards/img-2.png">
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="card-text text-secondary">Teclas leves, com borrachas especiais</p>
+                    </div>
+                </div>  
+                </div>
+               <div class="col-12 col-lg-3 mt-lg-0 mt-4">
+                <div class="card">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#monitorModal">
+                        <img class="card-img-top" src="img/cards/img-3.jpg">
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="card-text text-secondary">Gráficos ainda mais reais e bonitos</p>
+                    </div>
+                </div>  
+                </div>
+               <div class="col-12 col-lg-3 mt-lg-0 mt-4">
+                <div class="card">
+                    <a href="#" class="card-link" data-toggle="modal" data-target="#headModal">
+                        <img class="card-img-top" src="img/cards/img-4.jpg">
+                    </a>
+                    <div class="card-body text-center">
+                        <p class="card-text text-secondary">Maior imersão e qualidade de som</p>
+                    </div>
+                </div>  
+                </div>
+            </div>
+      </div>
+
+       <div class="bg-dark row col-12 ml-0 text-center">
+          <div class="col-12 mt-2">
+                <nav class="menu col-12">
+                    <ul>
+                        <a href="#" class="text-light"><li>Sobre nós</li></a>
+                        <a href="#" class="text-light"><li>Desenvolvimento</li></a>
+                        <a href="#" class="text-light"><li>Politica de Segurança</li></a>
+                        <a href="#" class="text-light"><li>Politica de Entrega</li></a>
+                    </ul>
+                </nav>
+            </div>
+           <div class="midias col-12 mb-4">
+                <a href="#"><img src="img/midias/Facebook.png"></a>
+                <a href="#"><img src="img/midias/Instagram.png"></a>
+                <a href="#"><img src="img/midias/Twitter.png"></a>
+                <a href="#"><img src="img/midias/whatsApp.png"></a>
+          </div>
+      </div>
+      <div class="bg-black col-12 text-light text-center">
+          <h5 class="m-0 pt-3">Desenvolvido por Murilo Russo</h5>
+          <p class="m-0 pb-3">Agradecimentos especiais para Erick Chiapone pelas imagens, e Beatriz Vitoriano pelos textos.</p>
+      </div>
+      
+      
+      
+      
+      
+      
+      <!-- modal -->
+      <!-- Mouse -->
+      <div class="modal fade" id="mouseModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mouse</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselMouse" class="carousel slide size-carousel size-carousel-modal-height" data-ride="carousel" class="active">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselMouse" data-slide-to="0"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="1"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="2"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="3"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="4"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="5"></li>
+                                        <li data-target="#carouselMouse" data-slide-to="6"></li>
+                                    </ol>
+                                      <div class="carousel-inner size-carousel size-carousel-modal-height">
+                                        <div class="carousel-item active">
+                                            <img src="img/modals/mouse/img-1.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-2.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-3.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-4.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-5.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-6.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mouse/img-7.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                      </div>
+                                    <a class="carousel-control-prev" href="#carouselMouse" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselMouse" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">Avançar</span>
+                                    </a>
+                                </div>    
+                            </div>
+                            <h5 class="container text-center mt-1 mb-0">O INCOMPARAVEL MOUSE TOP DE LINHA LIZARD BREMM</h5>
+                            <h5 class="container text-center text-success mt-1"><strong>R$: 200,00</strong></h5>
+                            <p class="ml-4 mr-4 text-center">
+                            Aqui está um para os fãs. O Bremm Lizard é o icônico mouse para jogos que você conhece e adora com a maioria dos Bremm Color da nossa linha - impressionantes 20 Estilos de iluminação. E com recursos construídos para desempenho em um corpo ergonômico, você tem uma vantagem insuperável sobre a concorrência.</p>
+                            <p class="ml-4 mr-4 d-none d-lg-block text-center">PARTES DE ILUMINAÇÃO PROLONGADAS
+                            O Bremm Lizard possui partes de iluminação estendidas ao longo de cada lado, iluminando perfeitamente o seu jogo. Escolha ampliar as ações do jogo com alertas de iluminação ou explore efeitos de iluminação animados para dar mais personalidade à sua configuração - tudo personalizável com o Bremm Synapse 3. Você também pode programar individualmente cada parte de iluminação no Bremm Studio.
+                            RÁPIDO E PRECISO DE TIRAR
+                            Apresentando o nosso aclamado Sensor Óptico Avançado Bremm 5G com 16.000 DPI reais, experimente um novo padrão de precisão e velocidade. Com uma Precisão de Resolução de 99,4%, você permanece no alvo mesmo durante uma ação intensa.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <a href="#"><button type="button" class="btn btn-primary" onClick='comprar()'>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+      <!-- Teclado -->
+      <div class="modal fade" id="tecladoModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Teclados</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselTeclado" class="carousel slide size-carousel size-carousel-modal-height" data-ride="carousel" class="active">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselTeclado" data-slide-to="0"></li>
+                                        <li data-target="#carouselTeclado" data-slide-to="1"></li>
+                                        <li data-target="#carouselTeclado" data-slide-to="2"></li>
+                                        <li data-target="#carouselTeclado" data-slide-to="3"></li>
+                                        <li data-target="#carouselTeclado" data-slide-to="4"></li>
+                                    </ol>
+                                      <div class="carousel-inner size-carousel size-carousel-modal-height">
+                                        <div class="carousel-item active">
+                                            <img src="img/modals/teclados/img-1.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/teclados/img-2.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/teclados/img-3.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/teclados/img-4.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/teclados/img-5.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                      </div>
+                                    <a class="carousel-control-prev" href="#carouselTeclado" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselTeclado" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">Avançar</span>
+                                    </a>
+                                </div>    
+                            </div>
+                            <h5 class="container text-center mt-1 mb-0">SINTA A DIFERENÇA</h5>
+                            <h5 class="container text-center text-success"><strong>R$: 230,00</strong></h5>
+                            <p class="ml-4 mr-4 text-center">
+                                O BREMM Chamaleom sempre foi o padrão ouro para teclados de jogos, e agora levamos seus componentes para o próximo nível - um Switch mecânico Bremm™ atualizado com o novo teclado digital multifuncional. Conheça o Bremm Chamaleom. Concebido como o mais completo teclado para jogos mecânicos em qualquer arena. Com o teclado Chamaleom, agora você pode transformar cada tecla em uma tecla de macro e ativar suas configurações preferidas de qualquer lugar.
+                            </p>
+                            <p class="ml-4 mr-4 d-none d-lg-block text-center">
+                                PRECISÃO DO TIPO DO TORNEIO Projetado especificamente para jogos, os Interruptores de Teclado Mecânico Bremm™ atuam a uma distância ideal, oferecendo velocidade e capacidade de resposta como nunca antes. Os Interruptores Mecânicos Bremm™ foram elogiados como o novo padrão para todos os teclados mecânicos para jogos desde a sua introdução.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <a href="#"><button type="button" class="btn btn-primary" onClick='comprar()'>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Monitor -->
+      <div class="modal fade" id="monitorModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Monitor</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselMonitor" class="carousel slide size-carousel size-carousel-modal-height" data-ride="carousel" class="active">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselMonitor" data-slide-to="0"></li>
+                                        <li data-target="#carouselMonitor" data-slide-to="1"></li>
+                                        <li data-target="#carouselMonitor" data-slide-to="2"></li>
+                                    </ol>
+                                      <div class="carousel-inner size-carousel size-carousel-modal-height">
+                                        <div class="carousel-item active">
+                                            <img src="img/modals/monitores/img-1.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/monitores/img-2.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/monitores/img-3.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                      </div>
+                                    <a class="carousel-control-prev" href="#carouselMonitor" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselMonitor" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">Avançar</span>
+                                    </a>
+                                </div>    
+                            </div>
+                            <h5 class="container text-center mt-1 mb-0">PIXEL PERFECT THE ULTIMATE ESPORTS GAMING MONITOR</h5>
+                            <h5 class="container text-center text-success mt-1"><strong>R$: 1.200,00</strong></h5>
+                            <p class="ml-4 mr-4 text-center">
+                                Um monitor de jogos precisa ser executado com extrema velocidade e clareza para ajudá-lo a reagir em uma fração de segundo. Ele também precisa ser capaz de exibir cores vibrantes profundas e uma imagem natural real para uma experiência de jogo verdadeiramente imersiva. O Bremm Bachae foi criado como uma extensão dessa filosofia - um display sem compromisso que produz qualidade de imagem de tirar o fôlego, tornando-o o melhor monitor de jogos esports. 
+                            </p>
+                            <p class="ml-4 mr-4 d-none d-lg-block text-center">
+                                BIG, BRIGHT, BRILLIANT DCI-P3 COLOR Uma das características de um display premium é a capacidade de mostrar todo o espectro de cores vibrantes, ao mesmo tempo em que renderiza ricos e profundos negros. O Bremm Bachae faz exatamente isso, apresentando um display IPS suportando uma grande variedade de conteúdo HDR com uma gama de cores DCI-P3 insanamente ampla, que é bem conhecida como o padrão da indústria cinematográfica e supera a dos sRGB. Com cores realistas e resolução WQHD, o mundo desaparecerá à medida que você estiver imerso em seus jogos e filmes favoritos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <a href="#"><button type="button" class="btn btn-primary" onClick='comprar()'>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- Heads -->
+      <div class="modal fade" id="headModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">HeadSet</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselHead" class="carousel slide size-carousel size-carousel-modal-height" data-ride="carousel" class="active">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselHead" data-slide-to="0"></li>
+                                        <li data-target="#carouselHead" data-slide-to="1"></li>
+                                        <li data-target="#carouselHead" data-slide-to="2"></li>
+                                    </ol>
+                                      <div class="carousel-inner size-carousel size-carousel-modal-height">
+                                        <div class="carousel-item active">
+                                            <img src="img/modals/heads/img-1.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/heads/img-2.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/heads/img-3.jpg" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                      </div>
+                                    <a class="carousel-control-prev" href="#carouselHead" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselHead" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">Avançar</span>
+                                    </a>
+                                </div>    
+                            </div>
+                            <h5 class="container text-center mt-1 mb-0">HEADSET SALAMANDER IMERSÃO WIRELESS INCOMPARÁVEL</h5>
+                            <h5 class="container text-center text-success mt-1"><strong>R$: 350,00</strong></h5>
+                            <p class="ml-4 mr-4 d-none d-lg-block text-center">
+                                  Quando se trata de imersão em jogos, o som desempenha um papel crítico. Ele envolve seu senso de audição para determinar a atmosfera e o humor, criando uma experiência realista que permite que você realmente incorpore seu personagem do jogo. Seguindo essa filosofia, criamos um headset com o THX Spatial Audio para proporcionar um som posicional de 360 °, proporcionando maior reconhecimento espacial. Também adicionamos recursos de design ergonômico para tornar esse um dos drivers diários mais confortáveis para jogos. Este é o Headset Salamander. COMPLEMENTADO POR CONFORTO O Headset Salamander é projetado para que sua tecnologia imersiva seja complementada por recursos confortáveis, permitindo que você escape para os mundos do jogo por horas sem desconforto.
+                            </p>
+                            <p class="ml-4 mr-4 text-center">
+                                ÁUDIO ESPACIAL THX O THX Spatial Audio vai além do som surround tradicional, simulando som em uma esfera de 360 ° ao seu redor. Com o Nari Ultimate, agora você pode reagir a qualquer movimento dentro do jogo, mesmo que esteja vindo de cima ou de baixo de você, dando a você mais sensação durante o jogo. Liberte seus instintos predatórios com o som como arma.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <a href="#"><button type="button" class="btn btn-primary" onClick='comprar()'>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- MousePad -->
+      <div class="modal fade" id="mousepadModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">MousePad</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="carouselMousePad" class="carousel slide size-carousel size-carousel-modal-height" data-ride="carousel" class="active">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselMousePad" data-slide-to="0"></li>
+                                        <li data-target="#carouselMousePad" data-slide-to="1"></li>
+                                        <li data-target="#carouselMousePad" data-slide-to="2"></li>
+                                        <li data-target="#carouselMousePad" data-slide-to="3"></li>
+                                    </ol>
+                                      <div class="carousel-inner size-carousel size-carousel-modal-height">
+                                        <div class="carousel-item active">
+                                            <img src="img/modals/mousepad/img-1.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mousepad/img-2.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mousepad/img-3.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                          <div class="carousel-item">
+                                            <img src="img/modals/mousepad/img-4.png" class="img-fluid d-block size-carousel size-carousel-modal-height">
+                                          </div>
+                                      </div>
+                                    <a class="carousel-control-prev" href="#carouselMousePad" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                        <span class="sr-only">Anterior</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselMousePad" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                        <span class="sr-only">Avançar</span>
+                                    </a>
+                                </div>    
+                            </div>
+                            <h5 class="container text-center mt-1 mb-0"> MICRO SUPERFÍCIE COM TEXTURA PARA SPEED E CONTROL</h5>
+                            <h5 class="container text-center text-success mt-1"><strong>R$: 90,00</strong></h5>
+                            <p class="ml-4 mr-4 text-center">
+                                A fim de alcançar o equilíbrio perfeito entre controle e velocidade, o Bremm frogfly apresenta um acabamento rígido e micro texturizado que lhe dá precisão e precisão sem esforço. A superfície precisa e consistente garante que cada movimento de seu mouse seja traduzido em movimento do cursor, para que você desfrute da precisão definitiva durante os duelos de jogos mais cheios de ação.
+                            </p>
+                            <p class="ml-4 mr-4 d-none d-lg-block text-center">
+                                ESPECIFICAÇÕES TÉCNICAS Acabamento com micro-texturas para um jogo equilibrado Revestimento de superfície otimizado para rastreamento altamente responsivo Iluminação personalizável Bremm Color Sincronização de cores entre dispositivos Bremm Synapse ativado (para iluminação personalizável do Bremm Color)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                    <a href="#"><button type="button" class="btn btn-primary" onClick='comprar()'>Comprar</button></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        function comprar(){
+            alert('Compra realizada com sucesso!');
+        }  
+    </script>
+  </body>
+</html>
